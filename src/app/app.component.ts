@@ -11,9 +11,9 @@ export class AppComponent {
 
   constructor(public _ps:PeliculasService){
 
-    this._ps.getPopulares().subscribe(data => console.log(data));
-    this._ps.getPeliculasCines().subscribe(data => console.log(data));
-    this._ps.buscarPelicula("Rocky").subscribe(data => console.log(data));
+    // this._ps.getPopulares().subscribe(data => {console.log("populares"),console.log(data)});
+    // this._ps.getCartelera().subscribe(data => {console.log("cartelera"),console.log(data)});
+    // this._ps.buscarPelicula("Rocky").subscribe(data => {console.log("buscar"),console.log(data)});
 
   }
 }
