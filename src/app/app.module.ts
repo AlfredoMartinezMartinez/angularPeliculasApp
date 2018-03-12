@@ -6,13 +6,16 @@ import {HttpModule,JsonpModule} from '@angular/http';
 import {APP_ROUTING} from './app.routes';
 //servicios
 import {PeliculasService} from "./providers/peliculas.service";
-
+//pipes
+import { PeliculaImagenPipe } from './pipes/pelicula-imagen.pipe';
 
 import { AppComponent } from './app.component';
 import { HomeComponent } from './components/home/home.component';
 import { SearchComponent } from './components/search/search.component';
 import { NavbarComponent } from './components/navbar/navbar.component';
 import { PeliculaComponent } from './components/pelicula/pelicula.component';
+import { GaleriaComponent } from './components/home/galeria.component';
+
 
 
 @NgModule({
@@ -21,7 +24,9 @@ import { PeliculaComponent } from './components/pelicula/pelicula.component';
     HomeComponent,
     SearchComponent,
     NavbarComponent,
-    PeliculaComponent
+    PeliculaComponent,
+    PeliculaImagenPipe,
+    GaleriaComponent
   ],
   imports: [
     BrowserModule,
