@@ -1,6 +1,7 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 import {HttpModule,JsonpModule} from '@angular/http';
+import { FormsModule, ReactiveFormsModule } from "@angular/forms";
 
 //rutas
 import {APP_ROUTING} from './app.routes';
@@ -32,6 +33,8 @@ import { GaleriaComponent } from './components/home/galeria.component';
     BrowserModule,
     HttpModule,
     JsonpModule,
+    FormsModule,
+    ReactiveFormsModule,
     APP_ROUTING
   ],
   providers: [PeliculasService],

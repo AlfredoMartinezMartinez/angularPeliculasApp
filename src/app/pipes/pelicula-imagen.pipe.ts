@@ -13,7 +13,7 @@ export class PeliculaImagenPipe implements PipeTransform {
       if(pelicula.poster_path){
         return url + pelicula.poster_path;
       }else{
-        return "assets/img/no-image.png"
+        return "./assets/img/No_Image.png"
       }
     }
 

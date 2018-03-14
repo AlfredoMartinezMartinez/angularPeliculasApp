@@ -6,9 +6,9 @@ import {SearchComponent} from './components/search/search.component';
 
 const app_routes: Routes = [
   { path: 'home', component: HomeComponent },
-  // { path: 'pelicula/:id', component: PeliculaComponent },
   { path: 'pelicula', component: PeliculaComponent },
   { path: 'buscar', component: SearchComponent },
+  { path: 'buscar/:texto', component: SearchComponent },
   { path: '**', pathMatch: 'full', redirectTo: 'home' }
 ];
 
