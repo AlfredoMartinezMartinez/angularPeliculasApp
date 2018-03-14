@@ -1,5 +1,4 @@
 import { Component, OnInit } from '@angular/core';
-import {PeliculasService} from '../../providers/peliculas.service';
 import {Router} from '@angular/router';
 
 @Component({
@@ -13,7 +12,7 @@ export class NavbarComponent implements OnInit {
 
   ngOnInit() {
   }
-  buscarPelicula(texto:string){    
+  buscarPelicula(texto:string){
     if(texto.length==0){
       return;
     }
